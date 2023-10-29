@@ -1,0 +1,32 @@
+{
+  "deno.enable": true,
+  "deno.lint": true,
+  "deno.unstable": true,
+  "editor.formatOnSave": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "denoland.vscode-deno",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "denoland.vscode-deno",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "denoland.vscode-deno",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "denoland.vscode-deno",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  "plantuml.diagramsRoot": "docs/diagrams/src",
+  "plantuml.exportOutDir": "docs/diagrams/out"
+}
