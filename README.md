@@ -59,8 +59,8 @@ console.log(Triceratops.legs); // 4
 
 ## Advanced
 
-This set of examples were created for the Fresh framework to make basic CRUD
-operations reusable. Conceptually I designed this application using a
+This set of examples have been created for the Fresh framework to make basic
+CRUD operations reusable. Conceptually I designed this application using a
 [three layer architecture](https://ctrly.blog/nodejs-layered-architecture/). I
 am using mongodb for persistance, and zod for schema validation. The full code
 [examples](./example/) are available in the src.
