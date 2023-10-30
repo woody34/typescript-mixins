@@ -1,4 +1,4 @@
-# What is typescript-mixins
+# What is typescript-mixins?
 
 This is a library that can be used create typescript mixins. The `mixins` util
 allows you to extend multiple mixin classes without losing types. It gives you
