@@ -1,8 +1,35 @@
 # What is typescript-mixins?
 
-This is a library that can be used create typescript mixins. The `mixins` util
-allows you to extend multiple mixin classes without losing types. It gives you
-the ability compose classes while preventing class explosion.
+This is a [Deno library](https://deno.land/x/typescript_mixins) that can be used
+create typescript mixins. The `mixins` util allows you to extend multiple mixin
+classes without losing types. It gives you the ability compose classes while
+preventing class explosion.
+
+# Usage
+
+```ts
+import {
+  Constructor,
+  mixins,
+} from "https://deno.land/x/typescript_mixins@1.0.0/mod.ts";
+
+// Simple static typescript mixin
+function LegsMixin<TBase extends Constructor>(Base: TBase) {
+  return class Legs extends Base {
+    private static _legs = 2;
+
+    public static get legs() {
+      return this._legs;
+    }
+
+    public static set legs(legs: number) {
+      this._legs = legs;
+    }
+  };
+}
+
+class TRex extends mixins(LegsMixin) {}
+```
 
 # Examples
 
